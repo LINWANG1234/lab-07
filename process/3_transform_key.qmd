@@ -1,5 +1,6 @@
 ---
 title: "Transform"
+Author: Lin Wang
 ---
 
 ## Overview
@@ -53,6 +54,16 @@ The data dictionary shows that we have a number of variables that we can use for
 
 As it stands, the curated dataset has the `text` as the unit of observation. This corresponds to the individual addresses.
 
+### Data description
+
+- Name/Source: State of the Union addresses dataset from the American Presidency Project.
+
+- Nature of Data: Textual data comprising speeches delivered by U.S. Presidents.
+
+- Observations and Variables: Each observation represents a single State of the Union address and includes variables such as the text of the speech, the date it was delivered, the President's name, and their political party.
+
+- Unit of Observation: The unit of observation in the curated dataset is a single State of the Union address.
+
 ## Structure
 
 The first step in the transformation process is to load the data and inspect the structure of the dataset.
@@ -71,6 +82,13 @@ glimpse(sotu_tbl)
 We now see the variables (as described in the data dictionary) as part of the `sotu_tbl` data frame. There are 241 rows and 7 columns.
 
 The next step is to transform the data into a format that is suitable for analysis. Since there are a number of different analyses that will be conducted, I will create a number of different datasets that are suitable for each analysis.
+
+- Unit of Observation: Each observation will represent a State of the Union address.
+
+- Variables:
+  - `date`: Date of the address
+  - `text`: Text of the speech
+  - Other variables such as President's name and political party may be included for reference but are not central to the analysis.
 
 **Sentiment analysis**
 
@@ -394,3 +412,24 @@ You usually will add the data files to the `.gitignore` file manually. However, 
 cat("../data/derived/sotu_sentiment.csv", file = "../.gitignore", append = TRUE)
 ```
 
+## Self assessment
+
+I found Lab 07 to be an engaging and informative exercise that helped reinforce my skills in dataset transformation using R, Git, and GitHub.
+
+- What did you learn?
+
+I gained a deeper understanding of dataset transformation techniques in R, particularly in terms of data organization and documentation. I learned how to leverage Git and GitHub for version control and collaboration, especially in managing changes to code and data.
+
+- What did you find most/ least challenging?
+
+The most challenging aspect for me was designing an idealized format for the transformed dataset. It required careful consideration of variables and their relationships.
+
+The least challenging part was writing the transformation code itself, as I had prior experience with data manipulation in R.
+
+- What resources did you consult?
+
+I primarily consulted the Lab 07 instructions provided by the instructor, as they provided clear guidance on the tasks to be completed. Additionally, I referred to the Quarto documentation for syntax and usage examples when working with Quarto documents.
+
+- What more would you like to know about transforming datasets?
+
+I would like to delve deeper into advanced dataset transformation techniques, such as reshaping data and handling missing values. To continue my learning journey, I plan to explore online resources such as R documentation, tutorials, and forums for additional insights and best practices.
