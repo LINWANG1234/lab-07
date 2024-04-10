@@ -416,20 +416,44 @@ cat("../data/derived/sotu_sentiment.csv", file = "../.gitignore", append = TRUE)
 
 I found Lab 07 to be an engaging and informative exercise that helped reinforce my skills in dataset transformation using R, Git, and GitHub.
 
+<!-- Glad to hear it! -->
+
 - What did you learn?
 
 I gained a deeper understanding of dataset transformation techniques in R, particularly in terms of data organization and documentation. I learned how to leverage Git and GitHub for version control and collaboration, especially in managing changes to code and data.
+
+<!--
+Transformation is a very creative process. One that rarely looks the same from one project to the next. The most important thing is to understand it's role and to have an idea of the major types of transformations thaat can be done.
+
+-->
 
 - What did you find most/ least challenging?
 
 The most challenging aspect for me was designing an idealized format for the transformed dataset. It required careful consideration of variables and their relationships.
 
+<!--
+This can be challenging. But it becomes a bit easier when you have a clear idea of the analysis you want to do. In this case, I created the research question so you the connection between the data and the analysis may not be as clear as it would be in a real project that you are working on.
+
+-->
+
+
 The least challenging part was writing the transformation code itself, as I had prior experience with data manipulation in R.
+
+<!-- Great. -->
 
 - What resources did you consult?
 
 I primarily consulted the Lab 07 instructions provided by the instructor, as they provided clear guidance on the tasks to be completed. Additionally, I referred to the Quarto documentation for syntax and usage examples when working with Quarto documents.
 
+<!-- Good job. I really love to see you looking for ouside resources. This will help you work towards being an autonomous learner! -->
+
+
 - What more would you like to know about transforming datasets?
 
 I would like to delve deeper into advanced dataset transformation techniques, such as reshaping data and handling missing values. To continue my learning journey, I plan to explore online resources such as R documentation, tutorials, and forums for additional insights and best practices.
+
+<!--
+
+Again, this is something that will come with practice --if you continue on with R programming in your future endeavors.
+
+-->
